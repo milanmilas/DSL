@@ -9,7 +9,9 @@ namespace DSL
     {
         static void Main(string[] args)
         {
-
+            List<MappingAttribute> attributes = new List<MappingAttribute>(){ new MappingAttribute(){ Name = "Trust", Value = "RR8"},
+                                                                              new MappingAttribute(){ Name = "Ward", Value = "OakWard"}
+                                                                            };
         }
     }
 }
