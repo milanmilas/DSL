@@ -5,10 +5,8 @@ using System.Text;
 
 namespace DSL
 {
-    public class MappingAttribute
+    public class Mapping
     {
-        public String Name { get; set; }
-
-        public String Value { get; set; }
+        public List<MappingAttribute> MappingAttributes { get; set; }
     }
 }
