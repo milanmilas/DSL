@@ -41,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mapping.cs" />
+    <Compile Include="GroupTerminalMappingAttribute.cs" />
+    <Compile Include="MappingRules\AllMappingRule.cs" />
+    <Compile Include="MappingRules\AndMappingRule.cs" />
+    <Compile Include="MappingRules\EqualsMappingRule.cs" />
+    <Compile Include="MappingRules\MappingRule.cs" />
+    <Compile Include="MappingContext.cs" />
     <Compile Include="MappingAttribute.cs" />
+    <Compile Include="MappingRules\NonTerminalMappingRule.cs" />
+    <Compile Include="MappingRules\TerminalMappingRule.cs" />
+    <Compile Include="NonTerminalMappingAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TerminalMappingAttribute.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
